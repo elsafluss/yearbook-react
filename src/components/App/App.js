@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Cohort from '../Cohort/Cohort';
+import Person from "../Person/Person"
 import people from '../../data/yearbook-data.js';
 import './App.css';
 
@@ -14,12 +15,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <header className="App-header">
-      <h1>Turing Yearbook</h1>
-      </header>
-        YOUR CODE GOES HERE
+        <header className="App-header">
+          <h1>Turing Yearbook</h1>
+          <Cohort people={people} />
+        </header>
       </div>
-    );
+    )
   }
 }
 

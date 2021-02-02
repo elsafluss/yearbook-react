@@ -16,11 +16,20 @@ body {
 }
 
 .App {
+  /* border: 1px solid red; */
   text-align: center;
+  background-color: darkslategrey;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 h1 {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 10px;
   color: limegreen;
+}
+
+.App-header  h1 {
+  /* border: 1px solid blue; */
+  grid-column: 1 / span 2;
 }
